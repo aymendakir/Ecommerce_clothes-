@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.dropdown:hover {
+  .sub-menu {
+    display: block;
+    color: aqua important;
+  }
+}
+.sub-menu {
+  margin-top: -10px;
+  display: none;
+  color: black;
+}
+.sub-menu:hover {
+  display: block;
+}
+.gi-location-menu:hover {
+  .gi-location-content {
+    display: block;
+  }
+}
+.gi-location-content {
+  display: none;
+}
+.gi-location-content:hover,
+.gi-location-dropdown:hover {
+  display: block;
+}
+.gi-cat-dropdown {
+  display: none;
+}
+.gi-category-icon-block:hover {
+  .gi-cat-dropdown {
+    display: block;
+  }
+}
+
+.gi-cat-dropdown:hover {
+  display: block;
+}
+
+.box:hover {
+  transition: 1s ease-in-out;
+  background-color: #a877619a;
+}
+.product-actions {
+  opacity: 0;
+
+  transform: translateY(10px);
+}
+.product:hover {
+  .hover-image {
+    opacity: 1;
+  }
+  .main-image {
+    opacity: 0;
+  }
+  .product-actions {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.add-to-cart {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.cart-show-hover:hover {
+  .add-to-cart {
+    opacity: 1;
+  }
+}
