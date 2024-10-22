@@ -78,7 +78,7 @@ function ProfileForm() {
   }, [isLoading, ProfileData, navigate, user, UserData]);
   const onSubmit = async (data) => {
     try {
-      const response = await fetch("http://localhost:3001/UpdateUser", {
+      const response = await fetch("https://commerce-backend-tau.vercel.app/UpdateUser", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

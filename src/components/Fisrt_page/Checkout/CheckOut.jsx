@@ -54,7 +54,7 @@ function CheckOut() {
     refetchOnWindowFocus: false,
     retryOnMount: 3,
   });
-  const url = "http://localhost:3001";
+  const url = "https://commerce-backend-tau.vercel.app";
   useEffect(() => {
     if (!FinalProduct) {
       navigate("/");

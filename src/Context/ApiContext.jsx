@@ -4,7 +4,7 @@ import axios from "axios";
 
 const AuthContext = createContext({});
 export const AuthProvider = ({ children }) => {
-  const url = "http://localhost:3001";
+  const url = "https://commerce-backend-tau.vercel.app";
   const getProduct = () => {
     return axios.get(`${url}/GetProduct`).then((response) => {
       return response.data.response;
@@ -81,7 +81,7 @@ export const AuthProvider = ({ children }) => {
     });
   };
   const Logout = () => {
-    fetch("http://localhost:3001/Logout", {
+    fetch("https://commerce-backend-tau.vercel.app/Logout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

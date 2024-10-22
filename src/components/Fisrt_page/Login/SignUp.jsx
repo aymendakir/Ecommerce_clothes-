@@ -39,15 +39,18 @@ function SignUp() {
 
   const onSubmit = async (data) => {
     try {
-      const response = await fetch("http://localhost:3001/signup", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        withCredentials: true,
+      const response = await fetch(
+        "https://commerce-backend-tau.vercel.app/signup",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          withCredentials: true,
 
-        body: JSON.stringify(data),
-      });
+          body: JSON.stringify(data),
+        }
+      );
 
       const result = await response.json();
       console.log(result);
