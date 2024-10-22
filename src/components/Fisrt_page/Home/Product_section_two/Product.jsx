@@ -45,46 +45,6 @@ function Product() {
               </div>
             </div>
           </div>
-
-          <div className=" mt-[40px] max-[991px]:mt-[-20px] max-[991px]:mb-[30px]">
-            <ul
-              className="nav-tabs flex flex-wrap max-[991px]:justify-start"
-              id="myproTab"
-            >
-              <li className="inline-block align-top text-[14px] text-[#777] uppercase p-[0] cursor-pointer font-medium transition-all duration-[0.3s] ease delay-[0s] leading-[20px] tracking-[0.7px] mr-[50px] max-[991px]:mr-[30px] max-[480px]:mr-[20px] active">
-                <a
-                  className="nav-link relative font-medium p-[0] max-[480px]:text-[13px] max-[480px]:leading-[28px]"
-                  href="#all"
-                >
-                  All
-                </a>
-              </li>
-              <li className="inline-block align-top text-[14px] text-[#777] uppercase p-[0] cursor-pointer font-medium transition-all duration-[0.3s] ease delay-[0s] leading-[20px] tracking-[0.7px] mr-[50px] max-[991px]:mr-[30px] max-[480px]:mr-[20px]">
-                <a
-                  className="nav-link relative font-medium p-[0] max-[480px]:text-[13px] max-[480px]:leading-[28px]"
-                  href="#snack"
-                >
-                  Snack &amp; Spices
-                </a>
-              </li>
-              <li className="inline-block align-top text-[14px] text-[#777] uppercase p-[0] cursor-pointer font-medium transition-all duration-[0.3s] ease delay-[0s] leading-[20px] tracking-[0.7px] mr-[50px] max-[991px]:mr-[30px] max-[480px]:mr-[20px]">
-                <a
-                  className="nav-link relative font-medium p-[0] max-[480px]:text-[13px] max-[480px]:leading-[28px]"
-                  href="#fruit"
-                >
-                  Fruits
-                </a>
-              </li>
-              <li className="inline-block align-top text-[14px] text-[#777] uppercase p-[0] cursor-pointer font-medium transition-all duration-[0.3s] ease delay-[0s] leading-[20px] tracking-[0.7px]">
-                <a
-                  className="nav-link relative font-medium p-[0] max-[480px]:text-[13px] max-[480px]:leading-[28px]"
-                  href="#veg"
-                >
-                  Vegetables
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
 
         <div className="w-full  mb-[-24px]">

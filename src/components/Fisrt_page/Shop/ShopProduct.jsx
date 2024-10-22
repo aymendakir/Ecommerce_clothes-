@@ -32,7 +32,7 @@ const colors = [
 function ShopProduct() {
   const [layout, setLayout] = useState("grid");
   const { id } = useParams();
-  
+
   const { getProduct, GetCategory, ProductByCategory } = useAuthContext([]);
   const { data, isLoading, isError, isFetched } = useQuery({
     queryKey: ["ProductShop"],
@@ -109,9 +109,7 @@ function ShopProduct() {
 
     if (updatedBrands.length > 0) {
       const filteredData = data.filter((item) => {
-        const sizesArray = item?.size?.replace(/[\[\]" ]/g, "").split(",");
-
-        return sizesArray.some((size) => updatedBrands.includes(size));
+        return item?.size?.some((size) => updatedBrands.includes(size));
       });
 
       setDataFilter(filteredData);
@@ -138,10 +136,13 @@ function ShopProduct() {
     setColorSelected(updatedBrands);
 
     if (updatedBrands.length > 0) {
-      const filteredData = data.filter((item) => {
-        const sizesArray = item?.color?.replace(/[\[\]" ]/g, "").split(",");
-        return sizesArray.some((color) => updatedBrands.includes(color));
-      });
+      const filteredData = data.filter((item) =>
+        item?.color?.some((color) =>
+          updatedBrands.includes(color.toLowerCase())
+        )
+      );
+
+      console.log(updatedBrands, color, filteredData);
 
       setDataFilter(filteredData);
     } else {
@@ -175,15 +176,14 @@ function ShopProduct() {
     }
     if (sizes.length > 0) {
       filteredData = filteredData.filter((item) => {
-        const sizesArray = item?.size?.replace(/[\[\]" ]/g, "").split(",");
-
-        return sizesArray.some((size) => sizes.includes(size));
+        return item?.size?.some((size) => sizes.includes(size));
       });
     }
     if (colors.length > 0) {
       filteredData = filteredData.filter((item) => {
-        const sizesArray = item?.color?.replace(/[\[\]" ]/g, "").split(",");
-        return sizesArray.some((color) => colors.includes(color));
+        return item?.color?.some((color) =>
+          colors.includes(color.toLowerCase())
+        );
       });
     }
     if (min > 0) {

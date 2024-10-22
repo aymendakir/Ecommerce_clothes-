@@ -410,6 +410,18 @@ function Navigation() {
                               />
                             </Link>
                           </li>
+                          <li className="dropdown drop-list relative ml-[20px] mr-[30px] transition-all duration-[0.3s] ease-in-out max-[1199px]:ml-[15px]">
+                            <Link
+                              to={"/Shop"}
+                              className=" relative transition-all duration-[0.3s] ease-in-out text-[15px] leading-[60px] capitalize text-[#4b5966] flex items-center font-medium"
+                            >
+                              Shop
+                              <ChevronRight
+                                className=" transition-all duration-[0.3s] ease-in-out mr-[10px] text-[18px] leading-[0] text-black/70 "
+                                size={20}
+                              />
+                            </Link>
+                          </li>
                           <li className="dropdown drop-list static ml-[20px] mr-[30px] transition-all duration-[0.3s] ease-in-out max-[1199px]:ml-[15px]">
                             <p className="dropdown-arrow relative transition-all duration-[0.3s] ease-in-out text-[15px] leading-[60px] capitalize text-[#4b5966] flex items-center font-medium">
                               Categories
