@@ -146,12 +146,8 @@ function Navigation() {
               <div className="gi-flex flex flex-row justify-between w-full max-[575px]:flex-col relative">
                 <div className="self-center gi-header-logo max-[575px]:mb-[15px]">
                   <div className="header-logo text-left">
-                    <Link>
-                      <img
-                        src="assets/img/logo/logo.png"
-                        alt="Site Logo"
-                        className="w-[144px] max-[1199px]:w-[130px] max-[991px]:w-[120px] max-[767px]:w-[100px] "
-                      />
+                    <Link to={"/"} className="uppercase font-mono text-3xl ">
+                      LOGO
                     </Link>
                   </div>
                 </div>
